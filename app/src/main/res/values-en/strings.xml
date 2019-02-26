@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">BitStore</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="categary">categories</string>
+    <string name="paihang">Ranking</string>
+    <string name="err_regist_fail">Sign Up Failed</string>
+    <string name="str_craate_account_fail">Build new account fail.</string>
+    <string name="str_craate_account_success">New account setup successful</string>
+    <string name="str_tip_backups">Please keep the backup file properly, it can help you recover your assets. \n Backup files can be used to restore accounts!</string>
+    <string name="str_make_scancode">Generating QR codes</string>
+    <string name="str_code_fail">Failed to generate QR code</string>
+    <string name="str_agin_verify_title">Verify mnemonic words</string>
+    <string name="str_agin_verify">Scan the two-dimensional code picture saved in the previous step and complete the mnemonic verification.</string>
+    <string name="str_ok">Finished</string>
+    <string name="layout_dialog_loading">Loading</string>
+    <string name="str_createwallet_tip">Sign up your \n first BitStore Account</string>
+    <string name="str_createwallet_scription">A de-centralized block chain AppStore, Get it now!!</string>
+    <string name="str_app">Apps</string>
+    <string name="str_introduce">Introduction</string>
+    <string name="str_cetary">categories</string>
+    <string name="str_upload_app">Upload</string>
+    <string name="str_select_apk">Choose apk file to upload</string>
+    <string name="str_prefix_error">Wrong file format, upload a new file.</string>
+    <string name="str_exit_upload">Continue to exit upload？</string>
+    <string name="str_exit_reload">Exit needs to be re-uploaded.</string>
+    <string name="str_exit">Quit</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_appversion">Version number</string>
+    <string name="str_tip_upload_introduce">Please upload picture</string>
+    <string name="str_tip_upload_introduce_3">Upload at lease three picture </string>
+    <string name="str_upload_avatar">upload profile picture</string>
+    <string name="str_select_categary">Select categories</string>
+    <string name="str_upload_apk">Upload app</string>
+    <string name="str_app_uploading">Uploading app</string>
+    <string name="str_upload_finish">Upload finished</string>
+    <string name="str_upload_icon_error">Failed to upload app logo</string>
+    <string name="str_app_upload">upload app</string>
+    <string name="str_max_5">Maximal limited to five</string>
+    <string name="str_comment">Comments</string>
+    <string name="str_tuijian">Recommend</string>
+    <string name="str_app_detail">App Detail</string>
+    <string name="str_download">Download</string>
+    <string name="str_download_finish">Download finsh</string>
+    <string name="str_downloading_title">Downloading,Continue to quit?</string>
+    <string name="str_re_download">Exit needs to be re-uploaded</string>
+    <string name="str_server_error">oops!network failed.</string>
+    <string name="str_developer">In developing...</string>
+    <string name="str_download_count">Total download</string>
+    <string name="str_upload_manager">Upload management</string>
+    <string name="str_record_mnemonic">Scan QR code to get mnemonic！</string>
+    <string name="str_checking">Verifying</string>
+    <string name="str_check_faile">Verify faile，mnemonic wrong</string>
+    <string name="str_scan_faile">"Can't identify QR code"</string>
+    <string name="str_appointment">Subscribe</string>
+    <string name="str_must">Essential</string>
+    <string name="str_frist">First Come</string>
+    <string name="str_feature">Special</string>
+    <string name="str_upload">Upload</string>
+    <string name="str_package">Gift</string>
+    <string name="str_message">Messages</string>
+    <string name="str_wph">唯品会</string>
+    <string name="str_tn">途牛</string>
+    <string name="str_wzry">王者荣耀</string>
+    <string name="str_qqcard">QQ飞车</string>
+    <string name="str_cjgame">吃鸡游戏</string>
+    <string name="str_zdonline">战地online</string>
+    <string name="str_lol">英雄联盟</string>
+    <string name="str_qqstore">腾讯应用宝</string>
+    <string name="str_hwstore">华为超市</string>
+    <string name="str_language" >Language Setting</string>
+    <string name="str_hot_search" >Trending</string>
+    <string name="str_history_search" >HistorySearch</string>
+    <string name="str_share">share</string>
+    <string name="str_all_categary">All Categary</string>
+    <string name="str_more">More</string>
+    <string name="lock">Lock:</string>
+    <string name="str_appname">App Name</string>
+    <string name="str_commit">Commit</string>
+    <string name="str_select_language">Select Language</string>
+    <string name="str_home_show">Home Name</string>
+    <string name="str_add">Add</string>
+    <string name="str_english">English</string>
+    <string name="str_zh">Chinese</string>
+    <string name="str_input_content">Input Name</string>
+    <string name="str_input_appname">input home appname</string>
+    <string name="str_comfirm">Ok</string>
+    <string name="str_controy">English:</string>
+    <string name="str_content_not_null">Input content is not null</string>
+
+    <string name="str_download_number">Download Total :</string>
+
+    <string name="str_content_is_letter">Please Input English</string>
+
+    <string name="str_max_2">you can select two!!</string>
+
+    <string name="str_app_drawdown">Drawdown</string>
+
+    <string name="str_app_modify">Modify</string>
+
+    <string name="str_BackUps">BackUps</string>
+    <string name="str_Backups_words">Backups Mnemonic</string>
+    <string name="str_img_gallery">QR Code is saved in gallery，Next to user</string>
+    <string name="str_next">Next</string>
+    <string name="str_select_img">Select QRCode</string>
+    <string name="str_app_introduce">Introduce</string>
+    <string name="str_simple_introduce">Simple Introduce</string>
+
+    <string name="str_tip_introduce">Plese input the simple introduce!!</string>
+
+    <string name="str_create_account">Create Account</string>
+    <string name="str_create_now">Create Now</string>
+    <string name="tv_again_click_out">Double Click To Exit</string>
+    <string name="str_title_account">My Account</string>
+
+    <string name="str_backup_account">Backup Account</string>
+    <string name="str_exit_account">Exit Account</string>
+    <string name="str_address">Address</string>
+    <string name="str_nickname">Nickname</string>
+    <string name="str_avatar">Avatar</string>
+
+    <string name="str_input_pwd">Input Password</string>
+
+    <string name="str_check_pwd">Check Your Password!!</string>
+    <string name="str_reset_now">Reset Now</string>
+    <string name="str_pwd_error">Password Error!!</string>
+
+    <string name="str_reset_account">Reset Account</string>
+    <string name="str_pwd">PassWord</string>
+    <string name="str_input_nickname">Please Input Nickname</string>
+    <string name="str_8_6_hint">Input 8-16 Letter and Number</string>
+    <string name="str_reset_tip">User Mnemonic to Reset Your Account</string>
+    <string name="str_input_mnemonic">Please Input Mnemonic</string>
+    <string name="str_8_6_hint_again">Input 8-16 Letter and Number Again</string>
+
+    <string name="str_pwd_not_same">Password inconsistent</string>
+
+    <string name="str_zan_success">Favourable Comment Success</string>
+
+
+    <string name="str_input_comment">Please Input Comment</string>
+
+    <string name="str_comment_go">To Comment</string>
+    <string name="str_check_version" >Check Version</string>
+    <string name="str_categary" >Category</string>
+    <string name="str_install">Install</string>
+    <string name="str_check_newversion">New Version Update</string>
+
+    <string name="str_check_newversion_tip">New version has been detected, please update!</string>
+    <string name="str_update_now">Update Now</string>
+    <string name="str_updating">Updating</string>
+
+
+    <string name="str_chat">Chat</string>
+    <string name="str_contact">Contacts</string>
+    <string name="str_find">Discover</string>
+
+    <string name="str_mine">Me</string>
+
+    <string name="str_msg">Message</string>
+
+    <string name="str_contacts">Contacts</string>
+
+
+    <string name="str_gallery">Gallery</string>
+
+    <string name="str_add_friend">Add</string>
+    <string name="home_zxing_text">Scan QR code</string>
+    <string name="BackUps">Backup account</string>
+
+    <string name="str_hot">Hot</string>
+
+
+    <string name="str_asset">Asset</string>
+    <string name="str_settings">Settings</string>
+    <string name="str_usehelp">Use help</string>
+    <string name="str_feedback">Feedback</string>
+    <string name="str_about">About</string>
+
+    <string name="str_scan_qrcode_add_friend">Scan the QR code above and add me as a friend</string>
+
+    <string name="str_identify">QR code business card</string>
+    <string name="str_save_success">Save success</string>
+    <string name="str_outline">(outline)</string>
+
+    <string name="str_net_error">network error</string>
+
+    <string name="str_channel_error">Channel create error</string>
+
+    <string name="str_channeling">Point Channel connection...</string>
+
+    <string name="str_channel_success">Channel connection Success</string>
+
+    <string name="str_noaccount">no this user</string>
+    <string name="str_add_remark">Add Remark</string>
+    <string name="str_add_remark_input">please input remark of local</string>
+
+    <string name="str_add_remark_input_to">please input remark of other side</string>
+
+
+    <string name="str_remark">Remark</string>
+
+    <string name="str_waiting">waiting...</string>
+
+    <string name="str_add_fail">add friend fail</string>
+
+    <string name="str_friend_already">Already Friend</string>
+
+    <string name="str_vcard">Vcard</string>
+
+    <string name="str_not_add_friend">not to add friend with outline</string>
+
+    <string name="str_add_success">add friend seccuss</string>
+
+    <string name="str_add_contact">add to contact</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

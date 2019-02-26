@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <include
+        layout="@layout/include_toolbar"
+        android:visibility="gone"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp180"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp65"
+            android:src="@mipmap/ic_bitstore2"
+            android:scaleType="centerCrop"
+
+
+
+            />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/str_create_account"
+             android:textColor="@android:color/white"
+             android:layout_below="@+id/head"
+             android:layout_marginTop="@dimen/dp15"
+             android:textSize="@dimen/dp15"
+             />
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp80"
+    android:layout_below="@+id/top_layout"
+    android:id="@+id/account_root"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_edit"
+    android:gravity="center"
+
+    >
+    <TextView
+        android:layout_width="@dimen/dp80"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="昵称"
+        android:padding="@dimen/dp5"
+        android:textSize="@dimen/dp15"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp15"
+        />
+
+
+    <View
+        android:layout_width="@dimen/dp1"
+        android:layout_height="@dimen/dp25"
+        android:background="@android:color/black"
+
+
+        />
+
+    <android.com.bitchat.utils.CusEditText
+        android:id="@+id/nickname"
+        android:layout_width="@dimen/dp245"
+        android:layout_height="@dimen/dp41"
+        android:background="@null"
+        android:drawablePadding="@dimen/dp10"
+        android:hint="请输入您的昵称"
+        android:inputType="text"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp8"
+        android:textSize="@dimen/dp13"
+
+        />
+
+
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:layout_below="@+id/account_root"
+        android:id="@+id/pwd_root"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="@dimen/dp80"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="密码"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp15" />
+
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp25"
+            android:background="@android:color/black"
+
+
+            />
+        <android.com.bitchat.utils.CusEditText
+            android:id="@+id/pwd"
+            android:layout_width="@dimen/dp245"
+            android:layout_height="@dimen/dp41"
+            android:background="@null"
+            android:drawablePadding="@dimen/dp10"
+            android:hint="请输入8-16位字母加数字"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp8"
+            android:textSize="@dimen/dp13"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:layout_below="@+id/pwd_root"
+        android:id="@+id/pwd_root1"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="@dimen/dp80"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="密码"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp15" />
+
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp25"
+            android:background="@android:color/black"
+
+            />
+        <android.com.bitchat.utils.CusEditText
+
+            android:id="@+id/pwd1"
+            android:layout_width="@dimen/dp245"
+            android:layout_height="@dimen/dp41"
+            android:background="@null"
+            android:drawablePadding="@dimen/dp10"
+            android:maxLength="16"
+            android:hint="请再次输入您的钱包密码"
+            android:inputType="textPassword"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp8"
+            android:textSize="@dimen/dp13"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/action_create"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_create_now"
+        android:padding="@dimen/dp2"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp25"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp15"
+        android:layout_below="@+id/pwd_root1"
+        android:background="@drawable/shap_round_solid_textview"
+
+        />
+
+
+
+
+
+</RelativeLayout>

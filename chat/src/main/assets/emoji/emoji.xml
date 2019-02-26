@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PopoEmoticons>
+    <Catalog Title="default">
+        <Emoticon File="emoji_00.png" ID="emoticon_emoji_00" Tag="[OK]"/>
+        <Emoticon File="emoji_01.png" ID="emoticon_emoji_01" Tag="[爱心]"/>
+        <Emoticon File="emoji_02.png" ID="emoticon_emoji_02" Tag="[爱心破碎]"/>
+        <Emoticon File="emoji_03.png" ID="emoticon_emoji_03" Tag="[拜拜]"/>
+        <Emoticon File="emoji_04.png" ID="emoticon_emoji_04" Tag="[鄙视]"/>
+        <Emoticon File="emoji_05.png" ID="emoticon_emoji_05" Tag="[闭嘴]"/>
+        <Emoticon File="emoji_06.png" ID="emoticon_emoji_06" Tag="[查看]"/>
+        <Emoticon File="emoji_07.png" ID="emoticon_emoji_07" Tag="[捶打]"/>
+        <Emoticon File="emoji_08.png" ID="emoticon_emoji_08" Tag="[打脸]"/>
+        <Emoticon File="emoji_09.png" ID="emoticon_emoji_09" Tag="[大哭]"/>
+        <Emoticon File="emoji_10.png" ID="emoticon_emoji_10" Tag="[蛋糕]"/>
+        <Emoticon File="emoji_11.png" ID="emoticon_emoji_11" Tag="[对不起]"/>
+        <Emoticon File="emoji_12.png" ID="emoticon_emoji_12" Tag="[犯困]"/>
+        <Emoticon File="emoji_13.png" ID="emoticon_emoji_13" Tag="[愤怒]"/>
+        <Emoticon File="emoji_14.png" ID="emoticon_emoji_14" Tag="[感冒]"/>
+        <Emoticon File="emoji_15.png" ID="emoticon_emoji_15" Tag="[购物袋]"/>
+        <Emoticon File="emoji_16.png" ID="emoticon_emoji_16" Tag="[乖巧]"/>
+        <Emoticon File="emoji_17.png" ID="emoticon_emoji_17" Tag="[哈哈大笑]"/>
+        <Emoticon File="emoji_18.png" ID="emoticon_emoji_18" Tag="[害羞]"/>
+        <Emoticon File="emoji_19.png" ID="emoticon_emoji_19" Tag="[汗颜]"/>
+        <Emoticon File="emoji_20.png" ID="emoticon_emoji_20" Tag="[欢笑]"/>
+        <Emoticon File="emoji_21.png" ID="emoticon_emoji_21" Tag="[加油]"/>
+        <Emoticon File="emoji_22.png" ID="emoticon_emoji_22" Tag="[奸笑]"/>
+        <Emoticon File="emoji_23.png" ID="emoticon_emoji_23" Tag="[见钱眼开]"/>
+        <Emoticon File="emoji_24.png" ID="emoticon_emoji_24" Tag="[惊魂未定]"/>
+        <Emoticon File="emoji_25.png" ID="emoticon_emoji_25" Tag="[惊吓]"/>
+        <Emoticon File="emoji_26.png" ID="emoticon_emoji_26" Tag="[咖啡]"/>
+        <Emoticon File="emoji_27.png" ID="emoticon_emoji_27" Tag="[瞌睡]"/>
+        <Emoticon File="emoji_28.png" ID="emoticon_emoji_28" Tag="[可怜]"/>
+        <Emoticon File="emoji_29.png" ID="emoticon_emoji_29" Tag="[抠鼻]"/>
+        <Emoticon File="emoji_30.png" ID="emoticon_emoji_30" Tag="[哭笑不得]"/>
+        <Emoticon File="emoji_31.png" ID="emoticon_emoji_31" Tag="[酷]"/>
+        <Emoticon File="emoji_32.png" ID="emoticon_emoji_32" Tag="[礼物]"/>
+        <Emoticon File="emoji_33.png" ID="emoticon_emoji_33" Tag="[呕吐]"/>
+        <Emoticon File="emoji_34.png" ID="emoticon_emoji_34" Tag="[撇嘴]"/>
+        <Emoticon File="emoji_35.png" ID="emoticon_emoji_35" Tag="[破口大骂]"/>
+        <Emoticon File="emoji_36.png" ID="emoticon_emoji_36" Tag="[强]"/>
+        <Emoticon File="emoji_37.png" ID="emoticon_emoji_37" Tag="[亲亲]"/>
+        <Emoticon File="emoji_38.png" ID="emoticon_emoji_38" Tag="[弱]"/>
+        <Emoticon File="emoji_39.png" ID="emoticon_emoji_39" Tag="[色眯眯]"/>
+        <Emoticon File="emoji_40.png" ID="emoticon_emoji_40" Tag="[思考]"/>
+        <Emoticon File="emoji_41.png" ID="emoticon_emoji_41" Tag="[太阳]"/>
+        <Emoticon File="emoji_42.png" ID="emoticon_emoji_42" Tag="[调皮]"/>
+        <Emoticon File="emoji_43.png" ID="emoticon_emoji_43" Tag="[偷笑]"/>
+        <Emoticon File="emoji_44.png" ID="emoticon_emoji_44" Tag="[微笑]"/>
+        <Emoticon File="emoji_45.png" ID="emoticon_emoji_45" Tag="[委屈]"/>
+        <Emoticon File="emoji_46.png" ID="emoticon_emoji_46" Tag="[委屈哭]"/>
+        <Emoticon File="emoji_47.png" ID="emoticon_emoji_47" Tag="[掩面]"/>
+        <Emoticon File="emoji_48.png" ID="emoticon_emoji_48" Tag="[疑问]"/>
+        <Emoticon File="emoji_49.png" ID="emoticon_emoji_49" Tag="[拥抱]"/>
+        <Emoticon File="emoji_50.png" ID="emoticon_emoji_50" Tag="[月亮]"/>
+        <Emoticon File="emoji_51.png" ID="emoticon_emoji_51" Tag="[晕]"/>
+        <Emoticon File="emoji_52.png" ID="emoticon_emoji_52" Tag="[赞]"/>
+    </Catalog>
+</PopoEmoticons>
+
+

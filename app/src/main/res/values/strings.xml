@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">BitChat</string>
+    <string name="home">主页</string>
+    <string name="search">搜索</string>
+    <string name="categary">分类</string>
+    <string name="paihang">排行</string>
+    <string name="err_regist_fail">注册失败</string>
+    <string name="str_craate_account_fail">创建账号失败</string>
+    <string name="str_craate_account_success">创建账号成功</string>
+    <string name="str_tip_backups">请妥善保管备份的文件，它可以帮您找回资产。\n 可用备份文件恢复账号！</string>
+    <string name="str_make_scancode">生成二维码</string>
+    <string name="str_code_fail">二维码生成失败</string>
+    <string name="str_agin_verify_title">校验助记词</string>
+    <string name="str_agin_verify">扫描上一步保存的二维码图片，完成助记词验证。</string>
+    <string name="str_ok">完成</string>
+    <string name="layout_dialog_loading">加载中</string>
+    <string name="str_createwallet_tip">创建你的\n第一个BitChat账号</string>
+    <string name="str_createwallet_scription">一个去中心化区块链聊天工具，快来体验一下吧！！</string>
+    <string name="str_app">应用</string>
+    <string name="str_introduce">简介</string>
+    <string name="str_cetary">分类</string>
+    <string name="str_upload_app">上传</string>
+    <string name="str_select_apk">请选择apk文件</string>
+    <string name="str_prefix_error">上传格式错误,请上传正确格式文件</string>
+    <string name="str_exit_upload">确定退出上传？</string>
+    <string name="str_exit_reload">退出上传后需要重新上传</string>
+    <string name="str_exit">退出</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_appversion">版本号</string>
+    <string name="str_tip_upload_introduce">请上传简介图</string>
+    <string name="str_tip_upload_introduce_3">至少上传3张简介图</string>
+    <string name="str_upload_avatar">请上传应用头像</string>
+    <string name="str_select_categary">请选择分类</string>
+    <string name="str_upload_apk">请上传应用</string>
+    <string name="str_app_uploading">应用正在上传</string>
+    <string name="str_upload_finish">上传完成</string>
+    <string name="str_upload_icon_error">上传应用图标错误</string>
+    <string name="str_app_upload">应用上传</string>
+    <string name="str_max_5">最多上传5条</string>
+    <string name="str_comment">评论</string>
+    <string name="str_tuijian">推荐</string>
+    <string name="str_app_detail">应用详情</string>
+    <string name="str_download">下载</string>
+    <string name="str_download_finish">下载完成</string>
+    <string name="str_downloading_title">正在下载，确定要退出吗？</string>
+    <string name="str_re_download">退出后需要重新下载</string>
+    <string name="str_server_error">网络异常啦！！</string>
+    <string name="str_developer">开发中...</string>
+    <string name="str_download_count">下载</string>
+    <string name="str_upload_manager">上传管理</string>
+    <string name="str_record_mnemonic">请先扫码完成助记词录入！</string>
+    <string name="str_checking">校验中</string>
+    <string name="str_check_faile">校验失败，助记词不正确</string>
+    <string name="str_scan_faile">无法识别二维码</string>
+    <string name="str_appointment">预约</string>
+    <string name="str_must">必备</string>
+    <string name="str_frist">首发</string>
+    <string name="str_feature">专题</string>
+    <string name="str_upload">上传</string>
+    <string name="str_package">礼包</string>
+    <string name="str_message">消息</string>
+    <string name="str_wph">唯品会</string>
+    <string name="str_tn">途牛</string>
+    <string name="str_wzry">王者荣耀</string>
+    <string name="str_qqcard">QQ飞车</string>
+    <string name="str_cjgame">吃鸡游戏</string>
+    <string name="str_zdonline">战地online</string>
+    <string name="str_lol">英雄联盟</string>
+    <string name="str_qqstore">腾讯应用宝</string>
+    <string name="str_hwstore">华为超市</string>
+
+    <string name="str_language" >语言设置</string>
+    <string name="str_hot_search">热门搜索</string>
+    <string name="str_history_search" >历史搜索</string>
+    <string name="str_share">分享</string>
+    <string name="str_all_categary">所有分类</string>
+    <string name="str_more">更多</string>
+    <string name="lock">锁仓</string>
+    <string name="str_appname">应用名</string>
+    <string name="str_commit">提交</string>
+    <string name="str_select_language">选择语种</string>
+    <string name="str_home_show">首页名称展示</string>
+    <string name="str_add">添加</string>
+    <string name="str_english">英文</string>
+    <string name="str_zh">中文</string>
+    <string name="str_input_content">输入名称</string>
+    <string name="str_input_appname">请输入首页app显示名称</string>
+    <string name="str_comfirm">确定</string>
+    <string name="str_controy">中文:</string>
+    <string name="str_content_not_null">输入内容不能为空</string>
+
+
+    <string name="str_download_number">下载 :</string>
+    <string name="str_content_is_letter">请输入英文字母</string>
+    <string name="str_max_2">最多添加2条</string>
+    <string name="str_app_drawdown">下架</string>
+    <string name="str_app_modify">编辑</string>
+    <string name="BackUps">备份账号</string>
+    <string name="str_Backups_words">备份助记词</string>
+    <string name="str_img_gallery">生成二维码保存在相册，下一步验证使用</string>
+    <string name="str_next">下一步</string>
+    <string name="str_select_img">选择图片</string>
+    <string name="str_app_introduce">应用介绍</string>
+    <string name="str_simple_introduce">简单介绍</string>
+    <string name="str_tip_introduce">请输入介绍语！</string>
+    <string name="str_create_account">创建账号</string>
+    <string name="str_create_now">立即创建</string>
+    <string name="str_reset_now">立即恢复</string>
+
+    <string name="str_BackUps">备份账号</string>
+    <string name="str_title_account">我的身份</string>
+    <string name="str_backup_account">备份身份</string>
+    <string name="str_exit_account">退出身份</string>
+    <string name="str_address">地址</string>
+    <string name="str_nickname">昵称</string>
+    <string name="str_avatar">头像</string>
+    <string name="str_input_pwd">请输入密码</string>
+    <string name="str_check_pwd">校验密码即可删除账号!!</string>
+    <string name="str_pwd_error">密码错误</string>
+    <string name="str_reset_account">恢复账号</string>
+
+    <string name="str_pwd">密码</string>
+    <string name="str_input_nickname">请输入您的昵称</string>
+    <string name="str_8_6_hint">请输入8-16位字母加数字</string>
+    <string name="str_8_6_hint_again">请再次输入8-16位字母加数字</string>
+    <string name="str_reset_tip">使用助记词导入恢复钱包并且可以设置新密码</string>
+    <string name="str_input_mnemonic">请输入助记词</string>
+    <string name="str_pwd_not_same">密码不一致</string>
+    <string name="str_zan_success">点赞成功</string>
+    <string name="str_input_comment">请输入评论</string>
+    <string name="str_comment_go">去评论</string>
+    <string name="str_check_version" >版本检测</string>
+
+    <string name="str_categary" >分类</string>
+    <string name="str_hot">热门</string>
+    <string name="str_install">安装</string>
+    <string name="str_check_newversion">版本更新</string>
+    <string name="str_check_newversion_tip">检测到一个新的版本，请更新！</string>
+    <string name="str_update_now">立即更新</string>
+    <string name="str_updating">更新中</string>
+
+    <string name="str_chat">聊天</string>
+    <string name="str_contact">朋友</string>
+    <string name="str_find">发现</string>
+
+    <string name="str_mine">我</string>
+    <string name="str_msg">消息</string>
+    <string name="str_contacts">通讯录</string>
+    <string name="str_gallery">相册</string>
+    <string name="str_add_friend">添加</string>
+    <string name="str_asset">资产</string>
+    <string name="str_settings">设置</string>
+    <string name="str_usehelp">帮助中心</string>
+    <string name="str_feedback">Feedback</string>
+    <string name="str_about">关于</string>
+    <string name="str_scan_qrcode_add_friend">扫描二维码，添加好友</string>
+    <string name="str_identify">名片</string>
+    <string name="str_save_success">保存成功</string>
+    <string name="str_outline">(离线)</string>
+    <string name="str_net_error">网络异常</string>
+
+    <string name="str_channel_error">点对点加密通道创建失败</string>
+    <string name="str_channeling">(点对点加密通道链接中...)</string>
+    <string name="str_channel_success">点对点通加密道创建成功</string>
+    <string name="str_noaccount">没有查找到该用户</string>
+
+    <string name="tv_again_click_out">再点击一次退出应用</string>
+    <string name="home_zxing_text">Scan QR code</string>
+
+    <string name="str_add_contact">添加到通讯录</string>
+
+    <string name="str_add_remark_input">对方在本机的名称</string>
+    <string name="str_add_remark_input_to">您在对方手机的名称</string>
+    <string name="str_add_remark_input_toast">请输入对方在本机的名称</string>
+    <string name="str_add_remark_input_to_toast">请输入您在对方手机的名称</string>
+
+
+    <string name="str_remark">备注</string>
+    <string name="str_waiting">等待中...</string>
+    <string name="str_add_fail">添加好友失败</string>
+    <string name="str_add_success">添加好友成功</string>
+
+    <string name="str_friend_already">已经是好友关系</string>
+    <string name="str_vcard">对方名片</string>
+    <string name="str_not_add_friend">对方不在线,无法添加好友</string>
+
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chat_row_padding_top">@dimen/dp12</dimen>
+    <dimen name="margin_chat_activity">@dimen/dp5</dimen>
+    <dimen name="size_avatar">@dimen/dp35</dimen>
+</resources>

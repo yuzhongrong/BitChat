@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp10"
+    android:padding="@dimen/dp5">
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="精品应用"
+        android:paddingLeft="@dimen/dp10"
+        android:textColor="@android:color/black"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp2"
+
+        >
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp85"
+            android:layout_below="@+id/tag"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp10"
+
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp85"
+            android:layout_below="@+id/tag"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+
+
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/line"
+        android:layout_below="@+id/applists"
+        android:visibility="gone"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/include_toolbar" />
+
+
+    <com.lqr.recyclerview.LQRRecyclerView
+
+        android:id="@+id/rvMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white"
+        android:paddingBottom="10px"
+        android:paddingLeft="15px"
+        android:paddingRight="15px"
+        android:paddingTop="30px"
+        app:rv_type="grid"
+        app:rv_column="4"
+        android:visibility="gone"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:layout_below="@+id/rvMember"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_all_categary"
+            android:layout_marginLeft="@dimen/dp15"
+            android:textColor="@color/color_666666"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_more"
+            android:layout_marginLeft="@dimen/dp10"
+            android:textColor="@color/color_666666"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:drawableRight="@mipmap/into"
+            />
+
+    </RelativeLayout>
+
+
+    <com.lqr.recyclerview.LQRRecyclerView
+        android:id="@+id/categary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        app:rv_divider_color="@color/c_d9d9d9"
+        app:rv_divider_size="@dimen/dp0.5"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/chat_row_padding_top">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp32"
+        android:background="@drawable/shape_session_func_press_bg"
+        android:textSize="@dimen/dp12"
+        android:padding="4dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_userhead1"
+            style="@style/avatar_iv_style"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:visibility="gone" />
+
+        <com.itheima.roundedimageview.RoundedImageView
+            android:id="@+id/iv_userhead"
+            style="@style/avatar_iv_style"
+            app:riv_border_color="#333333"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="5dip"
+            app:riv_oval="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:scaleType="centerCrop" />
+
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_userid"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:background="@drawable/baiqipao">
+
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:text="12312312312312312312312312312312312312312312312312312231231231231231231231231231231231231231231231223123123123123123123123123123123123123123123123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:autoLink="web"
+                android:gravity="center|left"
+                android:lineSpacingExtra="2dp"
+                android:maxWidth="@dimen/dp250"
+                android:minHeight="@dimen/size_avatar"
+                android:padding="@dimen/dp2"
+                android:textColor="@color/tip_black"
+                android:textColorLink="@android:color/holo_green_light"
+                android:textSize="@dimen/sp14"
+
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_userid"
+            style="@style/chat_text_name_style"
+            android:text="isdfoisdfjiosdjofisdjf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:maxWidth="@dimen/dp250"
+            android:singleLine="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

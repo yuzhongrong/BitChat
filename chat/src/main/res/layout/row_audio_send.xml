@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/chat_row_padding_top">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_userhead1"
+            style="@style/avatar_iv_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:visibility="gone" />
+
+        <com.itheima.roundedimageview.RoundedImageView
+            android:id="@+id/iv_userhead"
+            style="@style/avatar_iv_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:scaleType="centerCrop"
+            app:riv_border_color="#333333"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="5dip"
+            app:riv_oval="false" />
+
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp35"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:background="@drawable/lanqipao"
+            android:minWidth="@dimen/dp40">
+
+            <ImageView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp20"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:autoLink="web"
+                android:background="@drawable/audio_animation_right_list"
+                android:maxWidth="@dimen/dp250"
+                android:minHeight="@dimen/size_avatar"
+                android:padding="@dimen/dp8"
+                android:textSize="@dimen/sp12" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp8"
+            android:layout_toLeftOf="@+id/bubble"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/duration"
+            android:text="″" />
+
+        <include
+            layout="@layout/view_chat_msg_status"
+            android:layout_width="@dimen/dp23"
+            android:layout_height="@dimen/dp23"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp2"
+            android:layout_toLeftOf="@+id/tv_min" />
+
+        <include
+            layout="@layout/view_msg_progress_bar"
+            android:layout_width="@dimen/dp28"
+            android:layout_height="@dimen/dp28"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp2"
+            android:layout_toLeftOf="@+id/tv_min" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp35"
+    android:gravity="center_vertical"
+  >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:src="@mipmap/icon_china"
+        android:layout_marginLeft="@dimen/dp15"
+
+        />
+
+ <TextView
+     android:id="@+id/txt1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/str_controy"
+     android:layout_toRightOf="@id/icon"
+     android:layout_marginLeft="@dimen/dp15"
+     android:layout_centerInParent="true"
+     />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp25"
+        android:text="app首页显示名称"
+        />
+
+
+</RelativeLayout>

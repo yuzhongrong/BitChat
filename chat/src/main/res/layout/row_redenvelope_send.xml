@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/chat_row_padding_top">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_userhead1"
+            style="@style/avatar_iv_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:visibility="gone" />
+
+        <com.itheima.roundedimageview.RoundedImageView
+            android:id="@+id/iv_userhead"
+            style="@style/avatar_iv_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:scaleType="centerCrop"
+            app:riv_border_color="#333333"
+            app:riv_border_width="0dip"
+            app:riv_corner_radius="5dip"
+            app:riv_oval="false" />
+
+
+        <RelativeLayout
+            android:id="@+id/bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:layout_toLeftOf="@id/iv_userhead">
+
+            <RelativeLayout
+                android:id="@+id/rl_top"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_redenvelope_left_top"
+                android:padding="@dimen/dp8">
+
+                <ImageView
+                    android:id="@+id/redenvelope_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp8"
+                    android:src="@drawable/hongbao_item_icon" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/redenvelope_icon"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="你好！"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/redenvelope_icon"
+                    android:layout_toEndOf="@+id/redenvelope_icon"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text=""
+                    android:textSize="10dp"
+                    android:textColor="@color/white"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="@dimen/dp200"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_top"
+                android:background="@drawable/shape_redenvelope_bottom"
+                android:paddingVertical="@dimen/dp4"
+                android:paddingStart="@dimen/dp8"
+                android:text="红包"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_chat_msg_status" />
+
+        <include layout="@layout/view_msg_progress_bar" />
+    </RelativeLayout>
+
+</LinearLayout>

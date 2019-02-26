@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+def config = rootProject.ext.android //配置
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "android.com.bitchat"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+
+
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        useLibrary 'org.apache.http.legacy'
+
+    }
+
+
+    signingConfigs {
+        sign {
+            //TODO 发布版必须将项目内的keystore文件删除并将值改为外部引用值
+            /**
+             *  storeFile file('引用外部资源文件')
+             *  storePassword '读取外部文件值'
+             *  keyAlias '读取外部文件值'
+             *  keyPassword '读取外部文件值'
+             * */
+            storeFile file("idcw_new.jks")
+            storePassword "123456789"
+            keyAlias "idcw_new"
+            keyPassword "123456789"
+            v2SigningEnabled false
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
+        }
+
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.sign
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //设置release版本只包含armeabi-v7a的so包
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //  buildToolsVersion '27.0.3'
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation group: 'org.bitcoinj', name: 'bitcoinj-core', version: '0.14.6'
+    implementation 'org.web3j:core:3.3.1-android'
+    kapt 'com.alibaba:arouter-compiler:1.2.2'
+    implementation project(':chat')
+
+}
+
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.2'
+            }
+        }
+
+    }
+}
+
+
+
+
+
+

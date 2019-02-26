@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp5"
+   >
+
+
+    <RelativeLayout
+        android:id="@+id/top_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/search"
+            android:background="@drawable/shape_search_bg"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:drawablePadding="@dimen/dp10"
+            android:singleLine="true"
+
+
+            />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dp16"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <com.lqr.recyclerview.LQRRecyclerView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_search"
+        app:rv_divider_size="@dimen/dp20"
+        app:rv_divider_color="@android:color/transparent"
+        android:padding="@dimen/dp10"
+        />
+
+
+
+</RelativeLayout>

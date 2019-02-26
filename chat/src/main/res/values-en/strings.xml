@@ -1,0 +1,58 @@
+<resources>
+
+    <!--最近会话-->
+    <string name="draft">[草稿]</string>
+    <string name="picture">[Img]</string>
+    <string name="voice">[Audio]</string>
+    <string name="sticker">[贴图]</string>
+    <string name="video">[Video]</string>
+    <string name="location">[Location]</string>
+    <string name="red_pack">[Redpacket]</string>
+    <string name="wx_red_pack">微信红包</string>
+    <string name="send">Send</string>
+    <!--会话界面-->
+    <string name="please_to_talk">Hold and talk</string>
+
+    <string name="my_chat_account">微信号:%1$s</string>
+    <string name="album">Album</string>
+    <string name="collection">Collection</string>
+    <string name="wallet">Wallet</string>
+    <string name="card_package">Card package</string>
+    <string name="jian_shu">简书</string>
+    <string name="csdn">CSDN</string>
+    <string name="oschina">码云</string>
+    <string name="github">GitHub</string>
+    <string name="emotion">expression</string>
+    <string name="setting">Setting</string>
+    <string name="qr_code_card_tip">Sweep the QR code on the top, add my friend</string>
+    <string name="shot">Shooting</string>
+    <string name="location1">Location</string>
+    <string name="red_pack1">redpacket</string>
+    <string name="zhuanzhang">Transfer</string>
+    <string name="str_camera_permission_fail">Failed to get camera permission</string>
+
+    <!--联系人-->
+    <string name="new_friend">Add Friend</string>
+    <string name="group_cheat">New Group</string>
+    <string name="group_tag">Tag</string>
+    <string name="group_public_number">公众号</string>
+    <string name="load_contacts_error">Failed to load contact</string>
+    <string name="count_of_contacts">位联系人</string>
+
+    <!--修改备注-->
+    <string name="alias">Remark name</string>
+    <string name="tag">Tag</string>
+    <string name="add_tag_to_classfy_contacts">Add tags to categorize contacts</string>
+    <string name="phone_number">Phone</string>
+    <string name="add_phone_number">Add Phone</string>
+    <string name="describe">Description</string>
+    <string name="add_picture">Attached image</string>
+    <string name="add_business_card_or_pic">Add a business card or related image</string>
+    <string name="alias_no_empty">Remark is not null</string>
+    <string name="str_chat">Chat</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <include
+        android:id="@+id/toolbarid"
+        layout="@layout/include_toolbar"
+
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp180"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="@dimen/dp65"
+            android:layout_height="@dimen/dp65"
+            android:src="@mipmap/ic_bitstore2"
+            android:scaleType="centerCrop"
+
+
+
+            />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/str_create_account"
+             android:textColor="@android:color/white"
+             android:layout_below="@+id/head"
+             android:layout_marginTop="@dimen/dp15"
+             android:textSize="@dimen/dp15"
+             />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tip_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_reset_tip"
+        android:layout_below="@+id/toolbarid"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp15"
+
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/mnemonics"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:textSize="@dimen/dp15"
+        android:textStyle="bold"
+        android:background="@color/color_e3e2e2"
+        android:padding="@dimen/dp15"
+        android:drawablePadding="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        android:layout_below="@+id/tip_import"
+        android:textCursorDrawable="@color/colorPrimary"
+
+        />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp80"
+    android:layout_below="@+id/mnemonics"
+    android:id="@+id/account_root"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_edit"
+    android:gravity="center"
+
+    >
+    <TextView
+        android:layout_width="@dimen/dp80"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="@string/str_nickname"
+        android:padding="@dimen/dp5"
+        android:textSize="@dimen/dp15"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp15"
+        />
+
+
+    <View
+        android:layout_width="@dimen/dp1"
+        android:layout_height="@dimen/dp25"
+        android:background="@android:color/black"
+
+
+        />
+
+    <android.com.bitchat.utils.CusEditText
+        android:id="@+id/nickname"
+        android:layout_width="@dimen/dp245"
+        android:layout_height="@dimen/dp41"
+        android:background="@null"
+        android:drawablePadding="@dimen/dp10"
+        android:hint="@string/str_input_nickname"
+        android:inputType="text"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp8"
+        android:textSize="@dimen/dp13"
+
+        />
+
+
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:layout_below="@+id/account_root"
+        android:id="@+id/pwd_root"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="@dimen/dp80"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/str_pwd"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp15" />
+
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp25"
+            android:background="@android:color/black"
+
+
+            />
+        <android.com.bitchat.utils.CusEditText
+            android:id="@+id/pwd"
+            android:layout_width="@dimen/dp245"
+            android:layout_height="@dimen/dp41"
+            android:background="@null"
+            android:drawablePadding="@dimen/dp10"
+            android:hint="@string/str_8_6_hint"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp8"
+            android:textSize="@dimen/dp13"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:layout_below="@+id/pwd_root"
+        android:id="@+id/pwd_root1"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_edit"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="@dimen/dp80"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/str_pwd"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp15" />
+
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="@dimen/dp25"
+            android:background="@android:color/black"
+
+            />
+        <android.com.bitchat.utils.CusEditText
+
+            android:id="@+id/pwd1"
+            android:layout_width="@dimen/dp245"
+            android:layout_height="@dimen/dp41"
+            android:background="@null"
+            android:drawablePadding="@dimen/dp10"
+            android:maxLength="16"
+            android:hint="@string/str_8_6_hint_again"
+            android:inputType="textPassword"
+            android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingRight="@dimen/dp8"
+            android:textSize="@dimen/dp13"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/action_reset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:text="@string/str_reset_now"
+        android:padding="@dimen/dp2"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp25"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp15"
+        android:layout_below="@+id/pwd_root1"
+        android:background="@drawable/shap_round_solid_textview"
+
+        />
+
+
+
+
+
+</RelativeLayout>

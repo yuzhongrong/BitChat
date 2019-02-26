@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="none"
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+      <com.lqr.recyclerview.LQRRecyclerView
+          android:id="@+id/introduces"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:rv_orientation="horizontal"
+          app:rv_divider_size="@dimen/dp10"
+          app:rv_divider_color="@android:color/transparent"
+
+
+          />
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp35"
+          android:text="@string/str_app_introduce"
+          android:textColor="@color/black"
+          android:textSize="@dimen/dp14"
+          android:gravity="center_vertical"
+          android:paddingLeft="@dimen/dp15"
+          android:textStyle="bold"
+
+          />
+
+      <android.com.bitchat.widgets.textview.AutoSplitTextView1
+          android:id="@+id/simple_introduce"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColorHint="@color/c_d9d9d9"
+          android:background="@null"
+          android:textSize="@dimen/dp14"
+          android:paddingLeft="@dimen/dp15"
+          android:paddingRight="@dimen/dp15"
+          android:gravity="top"
+          android:paddingBottom="@dimen/dp65"
+
+          />
+
+
+
+    </LinearLayout>
+
+
+
+  </ScrollView>
+
+
+</RelativeLayout>

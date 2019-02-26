@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="lqr_foxim"/>
+
+    <version value="4"/>
+
+    <list>
+        <mapping class="com.yy.chat.bean.Friend"/>
+        <mapping class="com.yy.chat.bean.ChatMessage"/>
+        <mapping class="com.yy.chat.bean.GroupMember"/>
+        <mapping class="com.yy.chat.bean.GroupInfo"/>
+        <mapping class="com.yy.chat.bean.MemberInfo"/>
+        <mapping class="com.yy.chat.bean.Session"/>
+
+    </list>
+</litepal>

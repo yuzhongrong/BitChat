@@ -1,0 +1,190 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+def config = rootProject.ext.android //配置
+def librarys = rootProject.ext.dependencies //依赖
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
+
+
+    }
+
+    sourceSets{
+
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+
+    }
+    repositories { flatDir { dirs 'libs' } }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding = 'UTF-8'
+    }
+
+
+    buildTypes {
+        debug {
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        sourceSets {}
+    }
+
+
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '26.0.2'
+                }
+            }
+        }
+    }
+
+
+  //  buildToolsVersion '26.0.2'
+
+
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api librarys.rxjava
+    api librarys.rxbind2
+    api librarys.rxbind2_v4
+    api librarys.rxbind2_v7
+    api librarys.rxandroid
+    api librarys.rxlifecycle
+    api librarys.rxlifecycle_components
+    api librarys.rxlifecycle_com_perfer
+    api librarys.rxpermissions
+    api librarys.retrofit
+    api librarys.adapter_rxjava
+    api librarys.converter_gson
+    api librarys.converter_str
+    api librarys.logging_interceptor
+    api librarys.blockcanary
+    api librarys.swipebacklayout
+    api librarys.gson
+    api librarys.crashreport
+    api librarys.nativecrashreport
+    api librarys.smart_refresh_layout
+    api librarys.smartrefreshheader
+    api librarys.orhanobut_logger
+    api librarys.countdownview
+    api librarys.flowlayout
+    api librarys.ninegridview
+    api librarys.BaseRecyclerViewAdapterHelper
+    api librarys.cardviewV7
+    api librarys.multidex
+    api librarys.glide
+    annotationProcessor librarys.glide_processor
+    api librarys.fragmentation
+    api librarys.glide_transformations
+    api librarys.fastjson
+    api librarys.FlycoTabLayout_Lib
+    api librarys.FlycoRoundView_Lib
+    api librarys.appcompatV7
+    api librarys.banner
+    api librarys.recovery
+    api librarys.versitonCheck
+    // 版本检测
+    api librarys.xtablayout
+    api librarys.time_line_view
+    api librarys.basePopup
+    api librarys.arouterApi
+    api librarys.tinypinyin
+    api librarys.AndroidPickerView
+    api librarys.utilcode
+    api librarys.zxingCore
+    api librarys.richtext
+    api librarys.aviLibrary
+    api librarys.circleImageView
+    api librarys.pullLoadMoreRecyclerView
+    api librarys.switchButton
+    api librarys.recyclerViewSwipe
+    api librarys.constraintLayout
+    api librarys.butterKnife
+    api librarys.floatingActionButton
+    api librarys.flycoTabLayout
+    api librarys.meterialRipple
+    api librarys.simpleAndroidEventBus
+    api librarys.bubbleSeekBar
+    api librarys.kotlinStdlibJre7
+    api librarys.bgaBanner
+    api librarys.MPAndroidChart
+    api librarys.netmonitor
+    api librarys.magicIndicator
+    api librarys.luban
+    api librarys.roundedImageView
+    api librarys.badgeview
+    api librarys.niceimageview
+    api librarys.fab
+    // api project(':FoxArouter')
+    //由于在依赖foxman的时候发现把依赖库配在config.gradle 并不方便 要放进来 以下是和聊天相关的库
+    //版本更新
+    api 'com.qianwen:update-app:3.5.2'
+    api 'com.lzy.net:okgo:3.0.4'
+    api 'com.lqr.adapter:library:1.0.2'
+    api 'com.lqr.recyclerview:library:1.0.2'
+    api 'com.lqr.imagepicker:library:1.0.0'
+    api 'com.lqr.ninegridimageview:library:1.0.0'
+    api 'com.lqr.optionitemview:library:1.0.7'
+    api 'com.lqr.imagepicker:library:1.0.0'
+    annotationProcessor "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    //    api 'org.litepal.android:core:1.5.0'
+    api 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    api 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    api 'com.google.zxing:core:3.2.1'
+    api 'cn.bingoogolapple:bga-refreshlayout:1.1.7'
+    api 'cjt.library.wheel:camera:0.1.9'
+    api 'com.lovedise:permissiongen:0.0.6'
+    api files('libs/litepal-2.0.0.jar')
+    api 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //圆角
+    api 'com.github.open-android:RoundedImageView:v1.0.0'
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.16'
+    //沉浸式
+    api 'com.jaeger.statusbarutil:library:1.5.1'
+    api 'com.jacktuotuo.customview:verificationcodeview:1.0.5'
+    compile 'com.github.yilylong:CBDialog:v1.0.7'
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'
+    api 'com.hwangjr.rxbus:rxbus:1.0.6'
+    api 'q.rorbin:badgeview:1.1.3'
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/msg_status"
+    android:layout_width="@dimen/dp23"
+    android:layout_height="@dimen/dp23"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="@dimen/dp20"
+    android:layout_toLeftOf="@id/bubble"
+    android:clickable="true"
+    android:src="@drawable/ease_msg_state_failed_resend"
+    android:visibility="gone"
+    tools:showIn="@layout/row_text_send" />

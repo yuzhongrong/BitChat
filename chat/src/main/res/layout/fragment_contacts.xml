@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/fake_status_bar"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="@color/colorPrimary" />
+
+        <FrameLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_below="@+id/fake_status_bar"
+            android:background="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.lqr.recyclerview.LQRRecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_top"
+        app:rv_divider_color="@color/line"
+        app:rv_divider_size="1px" />
+
+    <com.yy.chat.widget.QuickIndexBar
+        android:id="@+id/qib"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp100"
+        android:layout_marginRight="@dimen/dp4"
+        android:layout_marginBottom="@dimen/dp80" />
+
+    <!--字母对话框-->
+    <TextView
+        android:id="@+id/tvLetter"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_contact_letter_bg"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

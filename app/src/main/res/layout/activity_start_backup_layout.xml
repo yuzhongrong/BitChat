@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:src="@mipmap/ic_backup"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp40"
+        />
+    <TextView
+        android:id="@+id/backup_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_BackUps"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/icon"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:textSize="@dimen/dp18"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:id="@+id/sub_backup_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_img_gallery"
+        android:textColor="@color/color_444444"
+        android:layout_below="@+id/backup_txt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp40"
+        android:textSize="@dimen/dp14"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/mnemonics"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/sub_backup_txt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp40"
+        android:textSize="@dimen/dp15"
+        android:textStyle="bold"
+        android:background="@drawable/shape_bg_edit_bg"
+        android:padding="@dimen/dp15"
+        android:drawablePadding="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp12"
+        android:layout_marginRight="@dimen/dp12"
+        />
+
+    <ImageView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mnemonics"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp15"
+        />
+
+
+    <Button
+        android:id="@+id/start_backups"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dp5"
+        android:background="@drawable/shap_round_solid_textview1"
+        android:text="@string/str_make_scancode"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp18"
+        android:textColor="@android:color/white"
+
+        />
+
+
+
+</RelativeLayout>

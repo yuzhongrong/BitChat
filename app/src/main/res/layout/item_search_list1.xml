@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dp10"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="最近搜索"
+        android:paddingLeft="@dimen/dp15"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/dp10"
+        android:drawablePadding="@dimen/dp10"
+
+        />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/flowlayout"
+        app:max_select="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp5"
+        android:paddingBottom="@dimen/dp5"
+        android:layout_below="@+id/tag"
+
+        >
+
+
+
+    </com.zhy.view.flowlayout.TagFlowLayout>
+
+</RelativeLayout>

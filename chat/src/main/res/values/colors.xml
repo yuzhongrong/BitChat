@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="line" tools:ignore="MissingDefaultResource">#D2D2D2</color>
+    <color name="green2">#64a4f4</color>
+    <color name="green0">@color/main</color>
+    <color name="green1">@color/main</color>
+    <color name="green3">@color/colorPrimary</color>
+    <color name="main">#26AAFD</color>
+    <color name="tip_black">#333333</color>
+    <color name="d_dddddd">#DDDDDD</color>
+    <color name="gray0">#464646</color>
+    <color name="gray1">#7e7e7e</color>
+    <color name="gray2">#969696</color>
+    <color name="gray3">#c8969696</color>
+    <color name="gray4">#F5F5F5</color>
+    <color name="gray5">#EBEBEB</color>
+    <color name="gray6">#FBFBFB</color>
+    <color name="gray7">#999999</color>
+    <color name="gray8">#D9D9D9</color>
+    <color name="gray9">#DBDFE0</color>
+
+    <!--快速索引bar颜色-->
+    <color name="side_bar">#919091</color>
+    <color name="side_bar_pressed">#fdfdf9</color>
+    <color name="c_a0a0ab">#a0a0ab</color>
+    <color name="black0">#000000</color>
+    <color name="black1">#99000000</color>
+
+    <color name="yellow0">#FFC51B</color>
+    <color name="yellow1">#E5A134</color>
+    <color name="white">#fff</color>
+    <color name="gray">#D9D9D9</color>
+</resources>

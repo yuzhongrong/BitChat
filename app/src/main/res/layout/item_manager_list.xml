@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp5"
+
+
+    >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王者荣耀"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="@dimen/dp10"
+        android:textSize="@dimen/dp15"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/dp12"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大逃杀策略哦是"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/dp5"
+        android:textSize="@dimen/dp12"
+        android:textColor="@color/color_444444"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/subtitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.4万人下载  3.7分  53.8MB"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_below="@+id/subtitle2"
+        android:layout_marginTop="@dimen/dp5"
+        android:textSize="@dimen/dp10"
+
+
+        />
+
+
+
+    <Button
+        android:id="@+id/draw_down"
+        android:layout_width="@dimen/dp55"
+        android:layout_height="@dimen/dp30"
+        android:layout_toLeftOf="@+id/draw_down1"
+        android:background="@drawable/shap_round_stroke_e88272_45"
+        android:layout_centerInParent="true"
+        android:text="@string/str_app_drawdown"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="@dimen/dp10"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:padding="@dimen/dp2"
+        />
+
+
+    <Button
+        android:id="@+id/draw_down1"
+        android:layout_width="@dimen/dp55"
+        android:layout_height="@dimen/dp30"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shap_round_stroke_e88272_45"
+        android:layout_centerInParent="true"
+        android:text="@string/str_app_modify"
+        android:textColor="@color/colorPrimary"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:padding="@dimen/dp2"
+
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item-->
+        <!--android:drawable="@drawable/shap_round_solid_textview"-->
+        <!--android:state_="true"></item>-->
+    <item
+        android:drawable="@drawable/shap_round_solid_textview_white"
+        ></item>
+</selector>
